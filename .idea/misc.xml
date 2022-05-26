@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2595" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/drawable/ic_acoount_settings.xml" value="0.2595" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/drawable/ic_cart_01.xml" value="0.2595" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/drawable/ic_cart_03.xml" value="0.2595" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2595" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/layout/mainpage.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/Documents/projetoprog/app/src/main/res/layout/signup.xml" value="0.25416666666666665" />
         <entry key="..\:/projetoprog/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
       </map>
     </option>
