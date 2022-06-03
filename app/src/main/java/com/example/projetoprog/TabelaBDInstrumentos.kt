@@ -12,7 +12,7 @@ class TabelaBDInstrumentos (db: SQLiteDatabase) : TabelaBD(db, NOME_INSTRUMENTO)
     companion object {
         const val NOME_INSTRUMENTO = "instrumento"
         const val CAMPO_ID = "id"
-        const val CAMPO_PRECO = "preço"
+        const val CAMPO_PRECO = "preco"
         const val CAMPO_CATEGORIA_ID = "categoria_id"
     }
 }
