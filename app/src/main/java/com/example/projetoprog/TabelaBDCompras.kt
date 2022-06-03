@@ -10,7 +10,7 @@ class TabelaBDCompras (db: SQLiteDatabase) : TabelaBD(db, NOME_CLIENTE) {
     }
 
     companion object {
-        const val NOME_CLIENTE = "cliente"
+        const val NOME_CLIENTE = "clientes"
         const val CAMPO_ID = "id"
         const val CAMPO_EMAIL = "email"
         const val NOME_INSTRUMENTO = "instrumentos"
