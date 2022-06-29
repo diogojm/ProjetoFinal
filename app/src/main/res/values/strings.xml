@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">projetoprog</string>
+    
+    <string-array name="Instrumentos">
+        <item>Guitarra</item>
+        <item>Piano</item>
+        <item>Violino</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Random</item>
+        <item>Random</item>
+        <item>Random</item>
+    </string-array>
 </resources>
