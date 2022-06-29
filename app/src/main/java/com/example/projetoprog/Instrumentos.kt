@@ -11,6 +11,8 @@ data class Instrumentos(
     var Categoria: Long,
     var id: Long = -1
 ) {
+
+
     fun toContentValues() : ContentValues {
         val valores = ContentValues()
 
@@ -22,6 +24,8 @@ data class Instrumentos(
     }
 
     companion object {
+
+
         fun fromCursor(cursor: Cursor): Instrumentos {
             val posId = cursor.getColumnIndex(BaseColumns._ID)
             val posNome = cursor.getColumnIndex(TabelaBDInstrumentos.NOME_INSTRUMENTO)

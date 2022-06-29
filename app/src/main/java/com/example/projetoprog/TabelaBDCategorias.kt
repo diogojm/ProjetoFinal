@@ -11,6 +11,8 @@ class TabelaBDCategorias(db: SQLiteDatabase) : TabelaBD(db, NOME) {
     companion object{
         const val NOME = "categoria"
         const val CAMPO_NOME = "nome"
+        const val CAMPO_ID = "id"
+
 
     }
 }

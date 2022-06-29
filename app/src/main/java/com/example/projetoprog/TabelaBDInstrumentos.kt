@@ -1,6 +1,8 @@
 package com.example.projetoprog
 
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteQueryBuilder
 import android.provider.BaseColumns
 
 class TabelaBDInstrumentos (db: SQLiteDatabase) : TabelaBD(db, NOME_INSTRUMENTO) {
@@ -9,10 +11,27 @@ class TabelaBDInstrumentos (db: SQLiteDatabase) : TabelaBD(db, NOME_INSTRUMENTO)
 
     }
 
+    override fun query(
+        columns: Array<String>,
+        selection: String?,
+        selectionArgs: Array<String>?,
+        groupBy: String?,
+        having: String?,
+        orderBy: String?
+    ): Cursor {
+        val queryBuilder = SQLiteQueryBuilder()
+        queryBuilder.tables = "$NOME_INSTRUMENTO INNER JOIN ${TabelaBDCategorias.NOME} ON ${TabelaBDCategorias.CAMPO_ID} = $CAMPO_CATEGORIA_ID"
+
+        return queryBuilder.query(db, columns, selection, selectionArgs, groupBy, having, orderBy)
+    }
+
+
     companion object {
         const val NOME_INSTRUMENTO = "instrumento"
         const val CAMPO_ID = "id"
         const val CAMPO_PRECO = "preco"
         const val CAMPO_CATEGORIA_ID = "categoria_id"
+
+        val TODAS_COLUNAS = arrayOf(CAMPO_ID, NOME_INSTRUMENTO, CAMPO_PRECO, CAMPO_CATEGORIA_ID)
     }
 }
